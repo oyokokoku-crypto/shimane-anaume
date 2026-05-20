@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>しまね穴埋めゲーム</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <section class="start-card" id="startCard" aria-live="polite">
+      <h1>しまね穴埋めゲーム！</h1>
+      <button class="button primary-button" id="startButton" type="button">スタート</button>
+    </section>
+
+    <section class="game-card" id="gameCard" aria-live="polite" hidden>
+      <header class="game-header">
+        <h1>しまね穴埋めゲーム</h1>
+        <p class="progress" id="progressText">1 / 8</p>
+      </header>
+
+      <div class="quiz-area" id="quizArea">
+        <img class="quiz-image" id="quizImage" src="anaume1.png" alt="しまね穴埋めゲーム 第1問">
+
+        <div class="button-area">
+          <button class="button primary-button" id="answerButton" type="button">答えを見る</button>
+          <button class="button secondary-button" id="nextButton" type="button" hidden>次の問題</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="finish-card" id="finishCard" aria-live="polite" hidden>
+      <p class="finish-mark">CLEAR!</p>
+      <h2>プレイありがとうございました！ぜひシェアしてね！</h2>
+      <p class="share-message">結果をスクショしてSNSでシェアしてね！</p>
+      <button class="button primary-button" id="replayButton" type="button">もう一度遊ぶ</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
